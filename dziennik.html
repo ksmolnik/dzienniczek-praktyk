@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dziennik praktyk</title>
+  </head>
+  <body>
+    <h1>DZIENNIK PRAKTYKI ZAWODOWEJ</h1>
+
+    <section>
+      <button id="Home"><a href="Home.html">Metryczka</a></button>
+      <button id="Dziennik zajęć">
+        <a href="summrary.html">podsumowanie</a>
+      </button>
+    </section>
+
+    <form action="#">
+      <fieldset>
+        <legend> <b> Informacje o zajęciach </b> </legend>
+        <label for="data"> Data:
+          <input type="date" name="" id="data" />
+        </label>
+        <label for="dział"> Dział:
+          <select name="" id="dzial">
+            <option value="Technik_informatyk">Technik Informatyk</option>
+            <option value="Technik_informatyk">Technik Programista</option>
+          </select>
+        </label>
+        <label for="temat"> Temat:
+          <select name="temat" id="temat">
+            <option value="temat1">temat1</option>
+            <option value="temat2">temat2</option>
+            <option value="temat3">temat3</option>
+            
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Opiekun</legend>
+        <label for="opiekun">
+          Imie i Nazwisko <input type="text" name="opiekun" id="opiekun" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Realizacja materiału</legend>
+        <label for="zrealizowaned">
+          Zrealizowano <input type="checkbox" />
+        </label>
+        <label for="stopien_opanowania">
+          1
+          <input
+            type="range"
+            name="stopien"
+            id="stopien"
+            min="1"
+            max="6"
+            step="1"
+          />
+          6
+        </label>
+      </fieldset>
+      <br>
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>
